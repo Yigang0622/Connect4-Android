@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/backGround">
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:id="@+id/topview"
+        android:background="@color/blue"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/table_layout"
+        android:layout_below="@+id/topview"
+        android:layout_alignLeft="@+id/topview"
+        android:layout_alignStart="@+id/topview" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:id="@+id/button_table_layout"
+        android:layout_below="@+id/table_layout" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Develpoed By Mike.Zhou"
+        android:textSize="20dp"
+        android:id="@+id/textView"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player One Turn!"
+        android:textSize="40dp"
+        android:textColor="@color/red"
+        android:id="@+id/current_player_textView"
+        android:layout_above="@+id/reset_button"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset Game"
+        android:id="@+id/reset_button"
+        android:layout_above="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Use AI"
+        android:id="@+id/buttonAI"
+        android:layout_alignBottom="@+id/reset_button"
+        android:layout_toRightOf="@+id/reset_button"
+        android:layout_toEndOf="@+id/reset_button" />
+
+</RelativeLayout>
